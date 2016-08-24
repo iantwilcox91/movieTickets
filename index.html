@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Tickets</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>select a movie:</h2>
+          <form id="movie">
+            <div class="form-group">
+              <input type="radio" name="movieName" value="1" checked>Tarzan<br>
+              <input type="radio" name="movieName" value="2">Cpt.Planet<br>
+              <input type="radio" name="movieName" value="3">Avatar<br>
+              <input type="radio" name="movieName" value="4">Lets find Nemo 3<br>
+              <input type="radio" name="movieName" value="5">Batman 7
+            </div>
+            <div class="form-group">
+              Select a time:
+              <input type="time" name="usr_time" class="time">
+            </div>
+            <div class="form-group">
+              How old are you? <br> Birthday:
+              <input type="date" name="bday" class="bDay">
+            </div>
+            <div class="form-group">
+              How many tickets?
+              <select class="amount">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <button type="submit" class="btn" id="submissionButton">calculate cost</button>
+          </form>
+        </div>
+        <div class="col-md-6 costPlace">
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
